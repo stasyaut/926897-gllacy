@@ -31,6 +31,32 @@
       </ul>
 	<section class="filters">
         <h2 class="visually-hidden">Фильтр товаров</h2>
+		<form action="https://echo.htmlacademy.ru" method="get">
+		<label for="sorting">Сортировка:</label>
+		<select name="sorting" id="sorting">
+				<option value="popular" selected>по популярности</option>
+				<option value="cheaper">сначала недорогие</option>
+				<option value="expensively">сначала дорогие</option>
+				<option value="fattier">по жирности</option>
+		</select>
+		<!-- двигать диапазон цены !-->
+		<label for="fat">Жирность:</label>
+		<ul>
+				<li><input type="radio" name="fat" id="fat" value="0%"></li>
+				<li><input type="radio" name="fat" id="fat" value="до 10%" checked></li>
+				<li><input type="radio" name="fat" id="fat" value="до 30%"></li>
+				<li><input type="radio" name="fat" id="fat" value="выше 30%"></li>
+		</ul>
+		<label for="additives">Наполнители:</label>
+		<ul>
+				<li><input id="additives" type="checkbox" name="chocolate" value="шоколадные"></li>
+				<li><input id="additives" type="checkbox" name="sugar-powder" value="сахарные присыпки"></li>
+				<li><input id="additives" type="checkbox" name="fruits" value="фрукты"></li>
+				<li><input id="additives" type="checkbox" name="syrups" value="сиропы"></li>
+				<li><input id="additives" type="checkbox" name="jams" value="джемы"></li>
+		</ul>
+		<input type="submit" value="Применить">
+		</form>
         <!-- Здесь будет форма -->
       </section>
 	  
