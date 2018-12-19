@@ -11,14 +11,46 @@
 				<img src="img/img-logo.svg" width="40" height="15" alt="Логотип компании "Глэйси">
 			</a>
 			<ul class="site-navigation">
-				<li><a href="/catalog">Каталог</a></li>
+				<li>
+					<form action="https://echo.htmlacademy.ru" method="get">
+							<label for="catalog"
+							<ul>
+									<li><a href="/new-products">Новинки</a></li>
+									<li><a href="/creamy">Сливочное</a></li>
+									<li><a href="/sherbets">Щербеты</a></li>
+									<li><a href="/fruit-ice">Фруктовый лёд</a></li>
+									<li><a href="/melorin">Мелорин</a></li>
+							</ul>
+					</form>
+				</li>
 				<li><a href="/delivery">Доставка и оплата</a></li>
 				<li><a href="/about-company">О компании</a></li>
 			</ul>
 			<ul class="user-navigation">
-			   <li class="search">Поиск</li>
-         <li class="login-link">Вход</li>
-		 	   <li class="shopping_cart">Корзина</li>
+			    <li class="search">
+					<button><img src="img/search.svg" alt="Поиск по сайту" aria-label="Открыть поиск по сайту, кнопка"> </button>
+					<form action="https://echo.htmlacademy.ru" method="get">
+				 		<label for="search" class="visually-hidden">Поиск</label>
+						<input type="search" id="search" placeholder="Что ищем?">
+					</form>
+				 </li>
+      			<li class="login-link">
+					<button><img src="img/enter.svg" alt="Авторизация" aria-label="Войти в аккаунт, кнопка"> </button>
+					<form action="https://echo.htmlacademy.ru" method="get">
+						<label for="email" class="visually-hidden">Электронна почта</label>
+						<input type="email" name="email" id="email" placeholder="Электронная почта">
+						<label for="password" class="visually-hidden">Пароль</label>
+						<input type="password" name="password" id="password" placeholder="Пароль">
+						<label for="enter-account" class="visually-hidden">Войти, кнопка</label>
+						<input type="submit" id="enter-account" value="Войти">
+						<a href="/forgotten-password">Забыли пароль?</a>
+						<a href="/new-account">Новая регистрация</a>
+					</form>
+				</li>
+		 	    <li class="shopping_cart">
+				<button><img src="img/shopping-cart.svg" alt="Корзина" aria-label="Открыть корзину, кнопка"> </button>
+				<button>Оформить заказ</button>
+				</li>
 			 </ul>  
 		</nav>
 	</header>
